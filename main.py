@@ -1,29 +1,11 @@
 
-# coding: utf-8
-
-# In[1]:
-
-# Create An Endpoint To Handle a User's Request
-
 # Here we create a web application using Flask which will
 # define an endpoint where a user's request is handled, and
 # a response can be returned from our bot.
 
-
-# In[3]:
-
 import random
 from flask import Flask, request
 from pymessenger.bot import Bot
-#from chatterbot import ChatBot
-
-#chatbot = ChatBot(
-#    'Ron Obvious',
-#    trainer='chatterbot.trainers.ChatterBotCorpusTrainer'
-#)
-
-# Train Chatterbot based on english language corpus
-#chatbot.train("chatterbot.corpus.english")
 
 app = Flask(__name__)
 ACCESS_TOKEN = 'EAADhJZAuDaxkBAJzUcCKwEMoih6gxyWxN2Tkbv9MXf1MtVo6PxCTaQ5rxKMA04HbjEZBh4ZArSbvP2WB8jJ0lqMgg9ZAyZAXmScRhHQQtTJArYmbp1GYmM9s7hnzhHEAZBMdnzAvoRZCCLfOVmBCKy9JIZC1MWvJJZCLZBylZC4kCRvQAZDZD'
@@ -76,9 +58,6 @@ def send_message(recipient_id, response):
 
 if __name__ == '__main__':
     app.run()
-
-
-# In[ ]:
 
 
 

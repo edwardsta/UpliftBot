@@ -49,7 +49,7 @@ def verify_fb_token(token_sent):
 def get_message():
     sample_responses = ["You're the best!", "You are SO pretty", "I'm proud of you :D", "You got this!", ":D :D",
                        "How are you so great!", "I missed you :D", "I want to be like you", "You look so healthy",
-                       "You're my smartest friend", "Have you been working out?", ":D Let's make this day SUPER!";
+                       "You're my smartest friend", "Have you been working out?", ":D Let's make this day SUPER!",
                        "You are more fun than anyone or anything I know, even bubble wrap", "You are the most perfect you there is",
                        "You are enough", "You are one of the strongest people I know", "You look great today",
                        "You have the best smile", "Your outlook on life is amazing", "You just light up the room",

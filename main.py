@@ -1,4 +1,3 @@
-
 # Here we create a web application using Flask which will
 # define an endpoint where a user's request is handled, and
 # a response can be returned from our bot.
@@ -46,10 +45,23 @@ def verify_fb_token(token_sent):
         return request.args.get("hub.challenge")
     return 'Invalid verification token'
 
+# Yeah, I know, it's a really dumb bot :D. get_message() will be smarter in future versions.
 def get_message():
     sample_responses = ["You're the best!", "You are SO pretty", "I'm proud of you :D", "You got this!", ":D :D",
                        "How are you so great!", "I missed you :D", "I want to be like you", "You look so healthy",
-                       "You're my smartest friend", "Have you been working out?", ":D Let's make this day SUPER!"]
+                       "You're my smartest friend", "Have you been working out?", ":D Let's make this day SUPER!";
+                       "You are more fun than anyone or anything I know, even bubble wrap", "You are the most perfect you there is",
+                       "You are enough", "You are one of the strongest people I know", "You look great today",
+                       "You have the best smile", "Your outlook on life is amazing", "You just light up the room",
+                       "You make a bigger impact than you realize", "You are always so helpful", "You have the best laugh :D",
+                       "I appreciate our friendship", "Your inside is even more beautiful than your outside",
+                       "You just glow", "I love the way you bring out the best in people", "You inspire me",
+                       "Nothing can stop you", "You just made my day", "You're such a good friend", "I like the way you are",
+                       "You have the best sense of style", "You look so young!", "That color looks perfect on you",
+                       "Everything seems brighter when you are around", "You are a great example to others",
+                       "You have the best ideas", "You have amazing creative potential", "You are stunning",
+                       "You are the reason I am smiling today", "You’re a gift to everyone you meet",
+                       "I am really glad we met", "I tell everyone how amazing you are"]
     #chatterbot_response = chatbot.get_response(message)
     return random.choice(sample_responses)
     

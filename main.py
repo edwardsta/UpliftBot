@@ -56,7 +56,7 @@ def send_message(recipient_id, response):
     bot.send_text_message(recipient_id, response)
     return "success"
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run()
 
 
